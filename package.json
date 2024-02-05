@@ -4,11 +4,10 @@
   "description": "A wedding website with loads of features.",
   "main": "npmfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx npm-force-resolutions"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:rampatra/wedding-website.git"
+  "resolutions": {
+    "graceful-fs": "^4.2.11"
   },
   "keywords": [
     "wedding",
@@ -19,11 +18,13 @@
   "license": "GPL-3.0",
   "homepage": "https://github.com/rampatra/wedding-website",
   "devDependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "4.0.2",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.25.0"
+    "sass": "^1.25.0",
+    "graceful-fs": "4.2.11",
+    "vinyl-fs": "4.0.0"
   },
   "dependencies": {
     "animate.css": "^3.7.2",
